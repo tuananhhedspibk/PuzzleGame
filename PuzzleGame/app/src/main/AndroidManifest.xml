@@ -24,9 +24,6 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".GameOverActivity"
-            android:theme="@style/NoTitleDialog">
-        </activity>
         <activity android:name=".GameScreenActivity"
             android:screenOrientation="portrait"
             android:label="GameScreen"
