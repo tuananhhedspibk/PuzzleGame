@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemModeIcon"
+        android:title="Mode"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itemModeText"
+        android:title="Mode"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/itemGuess"
+        android:title="Guess ✗"
+        app:showAsAction="always|withText" />
+
+</menu>

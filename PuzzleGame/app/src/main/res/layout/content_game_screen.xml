@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:layout_marginTop="70dp"
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="155dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3" />
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSilver"
+        android:text="Time  :"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="413dp"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorSilver"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="413dp"/>
+
+    <TextView
+        android:id="@+id/moveLabel"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorSilver"
+        android:layout_height="wrap_content"
+        android:text="Move :"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="458dp"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:id="@+id/moveNum"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorSilver"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="458dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="0"
+        android:layout_marginLeft="260dp"/>
+
+    <ImageView
+        android:id="@+id/guesspic"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/imageview_background"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewResult"
+        android:layout_alignTop="@+id/gridview"
+        android:layout_alignLeft="@+id/gridview"
+        android:layout_alignStart="@+id/gridview"
+        android:layout_alignRight="@+id/textTimer"
+        android:layout_alignEnd="@+id/textTimer"
+        android:layout_alignBottom="@+id/gridview" />
+
+    <Button
+        android:id="@+id/buttonPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="502dp"
+        android:onClick="buttonClicked"/>
+
+</RelativeLayout>

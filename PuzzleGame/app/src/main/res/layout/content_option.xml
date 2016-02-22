@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/option_activity" tools:context=".MainActivity">
+
+    <com.example.mylaptop.puzzlegame.CircleImageView
+        android:id="@+id/pic1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pic1"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="15dp"
+        app:civ_border_color="@color/dark"
+        android:onClick="imageClicked"/>
+
+    <com.example.mylaptop.puzzlegame.CircleImageView
+        android:id="@+id/pic2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pic2"
+        android:layout_toRightOf="@+id/pic1"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="35dp"
+        app:civ_border_color="@color/dark"
+        android:onClick="imageClicked"/>
+
+    <com.example.mylaptop.puzzlegame.CircleImageView
+        android:id="@+id/pic3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pic3"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/pic1"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="15dp"
+        app:civ_border_color="@color/dark"
+        android:onClick="imageClicked"/>
+
+    <com.example.mylaptop.puzzlegame.CircleImageView
+        android:id="@+id/pic4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pic4"
+        android:layout_toRightOf="@+id/pic3"
+        app:civ_border_width="2dp"
+        android:layout_below="@+id/pic2"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        app:civ_border_color="@color/dark"
+        android:onClick="imageClicked"/>
+
+    <com.example.mylaptop.puzzlegame.CircleImageView
+        android:id="@+id/pic5"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pic5"
+        app:civ_border_width="2dp"
+        android:layout_below="@+id/pic3"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        app:civ_border_color="@color/dark"
+        android:onClick="imageClicked"/>
+
+    <com.example.mylaptop.puzzlegame.CircleImageView
+        android:id="@+id/pic6"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pic6"
+        android:layout_toRightOf="@+id/pic5"
+        app:civ_border_width="2dp"
+        android:layout_below="@+id/pic4"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        app:civ_border_color="@color/dark"
+        android:onClick="imageClicked"/>
+
+</RelativeLayout>
